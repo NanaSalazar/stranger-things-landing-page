@@ -1,7 +1,4 @@
-import app from './firebase/app.js'
-import { subscribeToHellfireClub } from './firebase/hellfire-club.js'
-
-console.log(app)
+import { subscribeToHellFireClub } from './firebase/hellfire-club.js'
 
 window.addEventListener('click', function() {
     const audio = document.getElementById('music')
@@ -25,23 +22,30 @@ function switchTheme() {
     audio.volume = 0.2;
 }
 
-const name = document.querySelector('#iname').value
-const email = document.querySelector('#iemail').value
-const level = document.querySelector('#ilevel').value
-const character = document.querySelector('#icharacter').value
+const iname = document.querySelector('#iname')
+const email = document.querySelector('#iemail')
+const level = document.querySelector('#ilevel')
+const character = document.querySelector('#icharacter')
 
 const buttonSubscribe = document.querySelector('#btnSubscribe')
 
-buttonSubscribe.addEventListener('click', function() {
+buttonSubscribe.addEventListener('click', async (e) => {
 
+    e.preventDefault()
     const subscription = {
-        name: name,
-        email: email,
-        level: level,
-        character: character
+        name: iname.value,
+        email: email.value,
+        level: level.value,
+        character: character.value
     }
 
-    console.log(subscription)
+    const subscriptionId = await subscribeToHellFireClub(subscription)
+    console.log(`Inscrito com sucesso: ${subscriptionId}`)
+
+    iname.value = ''
+    email.value = ''
+    level.value = ''
+    character.value = ''
 
 })
 
