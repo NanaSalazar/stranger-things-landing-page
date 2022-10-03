@@ -1,7 +1,7 @@
 {
   "name": "landing-page",
   "version": "1.0.0",
-  "description": "",
+  "description": "projeto de landing page proposto pela DIO na dev week",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,5 +13,13 @@
   "devDependencies": {
     "firebase": "^9.10.0",
     "http-server": "^14.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NanaSalazar/stranger-things-landing-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NanaSalazar/stranger-things-landing-page/issues"
+  },
+  "homepage": "https://github.com/NanaSalazar/stranger-things-landing-page#readme"
 }

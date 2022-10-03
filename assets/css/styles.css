@@ -390,6 +390,244 @@ footer::after {
 }
 
 
+/*====== mobile ====== */
+@media only screen and (max-width: 699px) {
+
+  body {
+    max-width: 100vw;
+  }
+
+  #section-inverted-world {
+    display: block;
+  }
+
+  #section-inverted-world .section-texts {
+    width: 90%;
+    text-align: center;
+    margin-left: 5vw;
+    margin-bottom: 2vh;
+  }
+
+  #section-inverted-world .section-texts h1 {
+    max-width: 350px;
+    text-align: center;
+    margin-left: 25%;
+  }
+
+  #section-inverted-world .invert-element {
+    margin-left: 10vw;
+  }
+
+  #section-stranger-things-trailer {
+    display: block;
+  }
+
+  #section-stranger-things-trailer .video-frame {
+    background-color: #fff;
+    
+  }
+
+  #section-stranger-things-trailer .video-frame iframe {
+    position: relative;
+    width: 80vw;
+    margin-left: 2vw;
+  }
+
+  #section-stranger-things-trailer .section-texts {
+    width: 80%;
+    text-align: left;
+    margin-left: 10vw;
+  }
+
+  #section-stranger-things-trailer .section-texts h2 {
+    max-width: 150px;
+    display: block;
+    text-align: justify;
+  }
+
+  #section-stranger-things-gallery .container h2 {
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+  }
+  #section-stranger-things-gallery .gallery-container {
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+  }
+  
+  #section-stranger-things-gallery .gallery-image {
+    width: 120px;
+    height: 120px;
+    outline: 10px solid var(--highlight-color);
+    margin: 8px;
+    margin-top: 5vh;
+    border: 5px solid var(--primary-color);
+    box-sizing: initial;
+    overflow-y: hidden;
+    
+  }  
+
+  #section-form h2 {
+    width: 70%;
+  }
+
+  #section-form p {
+    width: 80%;
+  }
+
+  #section-form .form-content {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #section-form .form-content h3 {
+    color: var(--highlight-color);
+    flex-basis: 20%;
+    text-align: center;
+    margin: 0;
+  }
+
+  #section-form .form-container {
+    width: 80%;
+    margin-top: 2vh;
+    margin-left: 10vw;
+    flex-basis: 50%;
+    position: relative;
+  }
+
+  #section-form .form-container::after {
+    content: "";
+    background-color: var(--highlight-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+    
+  }
+
+  footer {
+    height: 30vh;
+  }
+
+  footer p {
+    max-width: 700px;
+    z-index: 2;
+    
+  }
+
+  footer::before, footer::after {
+    content: "";
+    width: 30vw;
+    height: 20vh;
+    background: url(../images/footer/tape.svg) no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -30px;
+  }
+  
+
+  
+}
+
+/* ==== tablet ==== */
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+
+  #section-inverted-world .section-texts {
+    width: 30%;
+    margin-left: 3vw;
+  }
+
+  #section-inverted-world .section-texts h1 {
+    max-width: 300px;
+  }
+
+  #section-inverted-world .invert-element {
+    max-width: 60%;
+  }
+
+  #section-stranger-things-trailer .section-texts {
+    width: 80%;
+    text-align: center;
+    margin-left: 10vw;
+  }
+  #section-stranger-things-trailer {
+    display: block;
+  }
+
+  #section-stranger-things-trailer .section-texts h2 {
+    text-align: center;
+    margin-left: 10vw;
+  }
+  
+  #section-stranger-things-trailer .video-frame {
+    background-color: #fff;
+    margin-left: 15vw;
+    margin-bottom: 3vh;
+    
+  }
+  
+  #section-stranger-things-trailer .video-frame iframe {
+    position: relative;
+    bottom: 2px;
+    left: 2px;
+    width: 80%;
+    border: 2px solid;
+    border-image: linear-gradient(var(--primary-color), var(--primary-color-contrast));
+    border-image-slice: 10;
+  }
+
+  #section-stranger-things-gallery .container h2 {
+    width: 600px;
+    text-align: center;
+  }
+
+  #section-form p {
+    width: 80%;
+  }
+
+  #section-form .form-content {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #section-form .form-container {
+    width: 60%;
+    margin-top: 2vh;
+    margin-left: 20vw;
+    flex-basis: 50%;
+    position: relative;
+  }
+
+  #section-form .form-content h3 {
+    color: var(--highlight-color);
+    flex-basis: 20%;
+    text-align: center;
+    margin: 0;
+  }
+
+  #section-form .form-container::after {
+    content: "";
+    background-color: var(--highlight-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    z-index: -1;
+    
+  }
+
+
+
+
+}
+
 
 
 
