@@ -32,21 +32,40 @@ const buttonSubscribe = document.querySelector('#btnSubscribe')
 buttonSubscribe.addEventListener('click', async (e) => {
 
     e.preventDefault()
-    const subscription = {
-        name: iname.value,
-        email: email.value,
-        level: level.value,
-        character: character.value
+
+    if(iname.value && email.value && level.value && character) {
+        const subscription = {
+            name: iname.value,
+            email: email.value,
+            level: level.value,
+            character: character.value
+        }
+    
+        const subscriptionId = await subscribeToHellFireClub(subscription)
+        
+        iname.value = ''
+        email.value = ''
+        level.value = ''
+        character.value = ''
+
+        document.querySelector('#confirm').style.display = 'flex'
+        //Criar uma nova div com infos sobre o confirm
+
+
+    } else {
+       document.querySelector('#alert').style.display = 'flex'
     }
-
-    const subscriptionId = await subscribeToHellFireClub(subscription)
-    console.log(`Inscrito com sucesso: ${subscriptionId}`)
-
-    iname.value = ''
-    email.value = ''
-    level.value = ''
-    character.value = ''
-
+    iname.focus()
 })
+
+document.querySelector('#alert').addEventListener('click', function () {
+    document.querySelector('#alert').style.display = 'none'
+})
+
+document.querySelector('#confirm').addEventListener('click', function () {
+    document.querySelector('#confirm').style.display = 'none'
+})
+
+
 
 

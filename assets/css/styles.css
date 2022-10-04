@@ -62,6 +62,70 @@
     transition: 1s;
 }
 
+.alert-danger {
+  background-color: var(--primary-color);
+  display: none;
+  justify-content: space-around;
+  height: 8vh;
+  width: 60%;
+  margin-left: 20%;
+
+
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  border-radius: 5px;
+
+}
+.alert-danger p {
+  color: var(--primary-color-contrast);
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 2vh;
+  margin-left: 15vw;
+  font-family: var(--featured-font-family);
+  z-index: 3
+}
+
+.alert-danger .buttonExit {
+  color: var(--primary-color-contrast);
+  padding-top: 1vh;
+  cursor: pointer;
+  
+}
+
+.alert-confirm {
+  background-color: var(--primary-color);
+  display: none;
+  justify-content: space-around;
+  height: 8vh;
+  width: 60%;
+  margin-left: 20%;
+
+
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  border-radius: 5px;
+}
+
+.alert-confirm p {
+  color: var(--primary-color-contrast);
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 2vh;
+  margin-left: 15vw;
+  font-family: var(--featured-font-family);
+  z-index: 3
+}
+
+.alert-confirm .buttonExit {
+  color: var(--primary-color-contrast);
+  padding-top: 1vh;
+  cursor: pointer;
+  
+}
+
 h1, h2, h3 {
     font-family: var(--featured-font-family);
     font-size: 3em;
@@ -217,6 +281,7 @@ section {
 #section-inverted-world .section-texts {
   width: 50%;
 }
+
 #section-inverted-world .section-texts h1 {
   max-width: 350px;
 }
@@ -397,6 +462,62 @@ footer::after {
     max-width: 100vw;
   }
 
+  .alert-danger {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+    height: 8vh;
+    width: 80%;
+    margin-left: 10%;
+  
+  
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    border-radius: 5px;
+  
+  }
+  .alert-danger p {
+    color: var(--primary-color-contrast);
+    font-size: 1em;
+    text-align: center;
+    padding-top: 2vh;
+    margin-left: 15vw;
+    font-family: var(--featured-font-family);
+    z-index: 3
+  }
+  
+  .alert-danger .buttonExit {
+    color: var(--primary-color-contrast);
+    padding-top: 1vh;
+    cursor: pointer;
+    
+  }
+
+  .alert-confirm {
+    background-color: var(--primary-color);
+    display: none;
+    justify-content: space-around;
+    height: 8vh;
+    width: 80%;
+    margin-left: 10%;
+
+
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    border-radius: 5px;
+  }
+
+  .alert-confirm p {
+    color: var(--primary-color-contrast);
+    font-size: 1em;
+    text-align: center;
+    padding-top: 2vh;
+    margin-left: 15vw;
+    font-family: var(--featured-font-family);
+    z-index: 3
+  }
   #section-inverted-world {
     display: block;
   }
@@ -423,12 +544,19 @@ footer::after {
   }
 
   #section-stranger-things-trailer .video-frame {
-    background-color: #fff;
+    background-color: var(--primary-color);
+    bottom: -8px;
+    left: -8px;
+    margin-left: 4vw;
+    width: 85%;
+
     
   }
 
   #section-stranger-things-trailer .video-frame iframe {
     position: relative;
+    bottom: 24px;
+    left: 24px;
     width: 80vw;
     margin-left: 2vw;
   }
@@ -537,6 +665,70 @@ footer::after {
 
 @media only screen and (min-width: 700px) and (max-width: 1000px) {
 
+  .alert-danger {
+    background-color: var(--primary-color);
+    display: none;
+    justify-content: space-around;
+    height: 8vh;
+    width: 80%;
+    margin-left: 10%;
+  
+  
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    border-radius: 5px;
+  
+  }
+  .alert-danger p {
+    color: var(--primary-color-contrast);
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 2vh;
+    margin-left: 15vw;
+    font-family: var(--featured-font-family);
+    z-index: 3
+  }
+  
+  .alert-danger .buttonExit {
+    color: var(--primary-color-contrast);
+    padding-top: 1vh;
+    cursor: pointer;
+    
+  }
+  
+  .alert-confirm {
+    background-color: var(--primary-color);
+    display: none;
+    justify-content: space-around;
+    height: 8vh;
+    width: 80%;
+    margin-left: 10%;
+  
+  
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    border-radius: 5px;
+  }
+  
+  .alert-confirm p {
+    color: var(--primary-color-contrast);
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 2vh;
+    margin-left: 15vw;
+    font-family: var(--featured-font-family);
+    z-index: 3
+  }
+  
+  .alert-confirm .buttonExit {
+    color: var(--primary-color-contrast);
+    padding-top: 1vh;
+    cursor: pointer;
+    
+  }
+
   #section-inverted-world .section-texts {
     width: 30%;
     margin-left: 3vw;
@@ -565,17 +757,19 @@ footer::after {
   }
   
   #section-stranger-things-trailer .video-frame {
-    background-color: #fff;
-    margin-left: 15vw;
-    margin-bottom: 3vh;
+    background-color: var(--primary-color);
+    bottom: 10px;
+    left: 10px;
+    margin-left: 1vw;
+    width: 80%;
     
   }
   
   #section-stranger-things-trailer .video-frame iframe {
     position: relative;
-    bottom: 2px;
-    left: 2px;
-    width: 80%;
+    bottom: 24px;
+    left: 24px;
+    width: 100%;
     border: 2px solid;
     border-image: linear-gradient(var(--primary-color), var(--primary-color-contrast));
     border-image-slice: 10;
