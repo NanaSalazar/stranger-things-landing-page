@@ -464,7 +464,7 @@ footer::after {
 
   .alert-danger {
     background-color: var(--primary-color);
-    display: flex;
+    display: none;
     justify-content: space-around;
     height: 8vh;
     width: 80%;
